@@ -48,3 +48,9 @@ This is a NestJS 11 application using TypeScript and pnpm.
 **Testing:** Unit tests (`.spec.ts`) live alongside source files in `src/`; Jest is configured to look for `*.spec.ts` in `src/`. E2E tests live in `test/` and use a separate Jest config (`test/jest-e2e.json`).
 
 **ESLint config:** Uses flat config (`eslint.config.mjs`) with `typescript-eslint` recommended type-checked rules and `eslint-plugin-prettier`. Key rule overrides: `@typescript-eslint/no-explicit-any` is off, floating promises and unsafe arguments are warnings only.
+
+## Task tracking
+
+Use `bd` for all task tracking. Never use markdown TODOs or TodoWrite.
+At session start: run `bd prime` to load context.
+At session end: run `bd sync` then `git push`.
